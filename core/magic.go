@@ -15,10 +15,6 @@ const (
 	SHA3_256     = 0x16
 	SHA3_384     = 0x15
 	SHA3_512     = 0x14
-	KECCAK_224   = 0x1A
-	KECCAK_256   = 0x1B
-	KECCAK_384   = 0x1C
-	KECCAK_512   = 0x1D
 	SHAKE_128    = 0x18
 	SHAKE_256    = 0x19
 	MD5          = 0xd5

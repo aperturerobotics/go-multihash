@@ -38,19 +38,15 @@ func (e ErrInconsistentLen) Error() string {
 const (
 	IDENTITY = 0x00
 	// Deprecated: use IDENTITY
-	ID         = IDENTITY
-	SHA1       = 0x11
-	SHA2_256   = 0x12
-	SHA2_512   = 0x13
-	SHA3_224   = 0x17
-	SHA3_256   = 0x16
-	SHA3_384   = 0x15
-	SHA3_512   = 0x14
-	SHA3       = SHA3_512
-	KECCAK_224 = 0x1A
-	KECCAK_256 = 0x1B
-	KECCAK_384 = 0x1C
-	KECCAK_512 = 0x1D
+	ID       = IDENTITY
+	SHA1     = 0x11
+	SHA2_256 = 0x12
+	SHA2_512 = 0x13
+	SHA3_224 = 0x17
+	SHA3_256 = 0x16
+	SHA3_384 = 0x15
+	SHA3_512 = 0x14
+	SHA3     = SHA3_512
 
 	SHAKE_128 = 0x18
 	SHAKE_256 = 0x19
@@ -104,10 +100,6 @@ var Names = map[string]uint64{
 	"sha3-512":                  SHA3_512,
 	"dbl-sha2-256":              DBL_SHA2_256,
 	"murmur3-128":               MURMUR3_128,
-	"keccak-224":                KECCAK_224,
-	"keccak-256":                KECCAK_256,
-	"keccak-384":                KECCAK_384,
-	"keccak-512":                KECCAK_512,
 	"shake-128":                 SHAKE_128,
 	"shake-256":                 SHAKE_256,
 	"sha2-256-trunc254-padded":  SHA2_256_TRUNC254_PADDED,
@@ -128,10 +120,6 @@ var Codes = map[uint64]string{
 	SHA3_512:                  "sha3-512",
 	DBL_SHA2_256:              "dbl-sha2-256",
 	MURMUR3_128:               "murmur3-128",
-	KECCAK_224:                "keccak-224",
-	KECCAK_256:                "keccak-256",
-	KECCAK_384:                "keccak-384",
-	KECCAK_512:                "keccak-512",
 	SHAKE_128:                 "shake-128",
 	SHAKE_256:                 "shake-256",
 	SHA2_256_TRUNC254_PADDED:  "sha2-256-trunc254-padded",

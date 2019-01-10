@@ -8,8 +8,6 @@
 		)
 
 	This package registers several multihashes for the sha3 family.
-	This also includes some functions known as "shake" and "keccak",
-	since they share much of their implementation and come in the same repos.
 */
 package sha3
 
@@ -28,8 +26,6 @@ func init() {
 	multihash.Register(multihash.SHA3_224, sha3.New224)
 	multihash.Register(multihash.SHAKE_128, func() hash.Hash { return shakeNormalizer{sha3.NewShake128(), 128 / 8 * 2} })
 	multihash.Register(multihash.SHAKE_256, func() hash.Hash { return shakeNormalizer{sha3.NewShake256(), 256 / 8 * 2} })
-	multihash.Register(multihash.KECCAK_256, sha3.NewLegacyKeccak256)
-	multihash.Register(multihash.KECCAK_512, sha3.NewLegacyKeccak512)
 }
 
 // sha3.ShakeHash presents a somewhat odd interface, and requires a wrapper to normalize it to the usual hash.Hash interface.
