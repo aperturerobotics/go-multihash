@@ -1,3 +1,5 @@
+// +build !js
+
 /*
 	This package has no purpose except to perform registration of multihashes.
 
